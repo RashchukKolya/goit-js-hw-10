@@ -19,8 +19,8 @@ function delayPromise(delay, radioChecked) {
 
 form.addEventListener('submit', onSubmitBtnClick);
 
-function onSubmitBtnClick(event) {
-  event.preventDefault();
+function onSubmitBtnClick(e) {
+  e.preventDefault();
 
   const delay = Number(form.elements.delay.value);
   const radioChecked = form.elements.state.value;
